@@ -5,6 +5,10 @@ import { ComputersCanvas } from './canvas'
 
 
 const Hero = () => {
+  const isMobile = window.matchMedia("(max-width: 500px)").matches;
+  if(isMobile===true){
+    alert("Open in a computer for better experience ")
+  }
   return (
     <section className='relative w-full h-screen mx-auto'>
          <div
