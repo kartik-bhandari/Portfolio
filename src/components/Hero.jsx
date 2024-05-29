@@ -5,12 +5,10 @@ import { ComputersCanvas } from './canvas'
 
 
 const Hero = () => {
-  const isMobile = window.matchMedia("(max-width: 500px)").matches;
-  if(isMobile===true){
-    alert("Open in a computer for better experience ")
-  }
+  
   return (
     <section className='relative w-full h-screen mx-auto'>
+      <div className='h-4/5'>
          <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -31,6 +29,8 @@ const Hero = () => {
       </div>
       </div>
       <ComputersCanvas /> 
+      </div>
+
       <div className='absolute xs:bottom-10 bottom-[30px] w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
