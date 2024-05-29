@@ -25,6 +25,7 @@ import {
     monkeypie,
     homyz,
     threejs,
+    skyEstate,
   } from "../assets";
   
   export const navLinks = [
@@ -59,6 +60,14 @@ import {
   
   const technologies = [
     {
+      name: "HTML 5",
+      icon: html,
+    },
+    {
+      name: "CSS 3",
+      icon: css,
+    },
+    {
       name: "JavaScript",
       icon: javascript,
     },
@@ -81,14 +90,6 @@ import {
     {
       name: "Node JS",
       icon: nodejs,
-    },
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
     },
     {
       name: "MongoDB",
@@ -213,15 +214,15 @@ import {
         "A full stack AI image generating website which works on Dall-E AI and allows user to share his work with community.",
       tags: [
         {
-          name: "react",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Mongodb",
           color: "blue-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Tailwind",
           color: "blue-text-gradient",
         },
       ],
@@ -229,25 +230,29 @@ import {
       source_code_link: "https://monkeypie.netlify.app/",
     },
     {
-      name: "Homyz",
+      name: "skyEstate",
       description:
-        "Fully responsive and animated frontend website for a real estate business. Build using react and framer motion. ",
+        "Full stack, responsive Real Estate website for Buying, Selling and Renting Houses. Build using react and tailwind. ",
       tags: [
         {
-          name: "react",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "framer-motion",
+          name: "Express",
           color: "blue-text-gradient",
         },
         {
-          name: "css",
+          name: "JWT",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Firebase",
           color: "blue-text-gradient",
         },
       ],
-      image: homyz,
-      source_code_link: "https://homyyzzz.netlify.app/",
+      image: skyEstate,
+      source_code_link: "https://skyestate.onrender.com/",
     },
   ];
   

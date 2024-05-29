@@ -31,6 +31,7 @@ import tesla from "./company/tesla.png";
 
 import monkeypie from "./monkeypie.png";
 import homyz from "./homyz.png";
+import skyEstate from "./skyEstate.png"
 
 
 export {
@@ -64,4 +65,5 @@ export {
   tesla,
   monkeypie,
   homyz,
+  skyEstate,
 };
