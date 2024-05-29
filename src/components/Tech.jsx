@@ -9,10 +9,13 @@ const Tech = () => {
   const Map = (isMobile ,technologies)=>{
     if(isMobile){
       return(
-    technologies.slice(4,8).map((technology)=>(
+    technologies.slice(3,7).map((technology)=>(
+    <div>
     <div className='w-28 h-28' key={technology.name}>
     <BallCanvas icon={technology.icon}/>
     <p className="flex justify-center text-white font-bold">{technology.name}</p>
+    <p className="flex justify-center text-white">etc</p>
+    </div>
     </div>
     )))
     }
