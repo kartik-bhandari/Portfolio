@@ -33,8 +33,8 @@ const Tech = () => {
     <h1 className='font-bold flex justify-center text-lg mb-5 text-[#915EFF]'>My Tech Stack</h1>
     <div className='flex flex-row flex-wrap justify-center gap-10'>
       {Map(isMobile ,technologies)}
-      <p className="flex justify-center text-white">etc</p>
     </div>
+        <p className="flex justify-center text-white">etc</p>
     </>
   );
 };
