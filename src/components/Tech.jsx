@@ -34,7 +34,7 @@ const Tech = () => {
     <div className='flex flex-row flex-wrap justify-center gap-10'>
       {Map(isMobile ,technologies)}
     </div>
-        <p className="flex justify-center text-white">etc</p>
+        
     </>
   );
 };
