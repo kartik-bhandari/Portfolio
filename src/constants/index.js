@@ -26,6 +26,8 @@ import {
     homyz,
     threejs,
     skyEstate,
+    ragvi,
+    chatApp
   } from "../assets";
   
   export const navLinks = [
@@ -209,27 +211,6 @@ import {
   
   const projects = [
     {
-      name: "monkeyPie",
-      description:
-        "A full stack AI image generating website which works on Dall-E AI and allows user to share his work with community.",
-      tags: [
-        {
-          name: "React",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Mongodb",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Tailwind",
-          color: "blue-text-gradient",
-        },
-      ],
-      image: monkeypie,
-      source_code_link: "https://monkeypie.netlify.app/",
-    },
-    {
       name: "skyEstate",
       description:
         "Full stack, responsive Real Estate website for Buying, Selling and Renting Houses. Build using react and tailwind. ",
@@ -253,6 +234,70 @@ import {
       ],
       image: skyEstate,
       source_code_link: "https://skyestate.onrender.com/",
+    },
+        {
+      name: "chatApp",
+      description:
+        "Real-Time Chat App with video caling and screen sharing features built using MERN stack and daisyUI.",
+      tags: [
+        {
+          name: "daisyUI",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Stream",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "jwt",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: chatApp,
+      source_code_link: "https://stream-app-e0li.onrender.com",
+    },
+        {
+      name: "ragviDesign",
+      description:
+        "A fully functional and responsive website for an interior design company based in Noida, India.",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Firebase",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "jwt",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: ragvi,
+      source_code_link: "https://www.ragvidesign.in/home",
+    },
+    
+    {
+      name: "monkeyPie",
+      description:
+        "A full stack AI image generating website which works on Dall-E AI and allows user to share his work with community.",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Mongodb",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: monkeypie,
+      source_code_link: "https://monkeypie.netlify.app/",
     },
   ];
   

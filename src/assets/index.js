@@ -30,6 +30,8 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import monkeypie from "./monkeypie.png";
+import ragvi from "./ragvi.png";
+import chatApp from "./chatApp.png";
 import homyz from "./homyz.png";
 import skyEstate from "./skyEstate.png"
 
@@ -37,6 +39,8 @@ import skyEstate from "./skyEstate.png"
 export {
   klogo,
   backend,
+  chatApp,
+  ragvi,
   creator,
   mobile,
   web,
