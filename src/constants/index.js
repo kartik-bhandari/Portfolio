@@ -27,7 +27,8 @@ import {
     threejs,
     skyEstate,
     ragvi,
-    chatApp
+    chatApp,
+    eventsnow
   } from "../assets";
   
   export const navLinks = [
@@ -211,6 +212,69 @@ import {
   
   const projects = [
     {
+      name: "Events Now",
+      description:
+        "An event booking web app where users can discover events, reserve seats, and manage bookings seamlessly.",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Node.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "MongoDB",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: eventsnow,
+      source_code_link: "https://events-now-flax.vercel.app/",
+    },
+        {
+      name: "ragviDesign",
+      description:
+        "A fully functional and responsive website for an interior design company based in Noida, India.",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Firebase",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "jwt",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: ragvi,
+      source_code_link: "https://www.ragvidesign.in/home",
+    },
+    {
+      name: "monkeyPie",
+      description:
+        "A full stack AI image generating website which works on Dall-E AI and allows user to share his work with community.",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Mongodb",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: monkeypie,
+      source_code_link: "https://monkeypie.netlify.app/",
+    },
+    {
       name: "skyEstate",
       description:
         "Full stack, responsive Real Estate website for Buying, Selling and Renting Houses. Build using react and tailwind. ",
@@ -256,49 +320,7 @@ import {
       image: chatApp,
       source_code_link: "https://stream-app-e0li.onrender.com",
     },
-        {
-      name: "ragviDesign",
-      description:
-        "A fully functional and responsive website for an interior design company based in Noida, India.",
-      tags: [
-        {
-          name: "React",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Firebase",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "jwt",
-          color: "blue-text-gradient",
-        },
-      ],
-      image: ragvi,
-      source_code_link: "https://www.ragvidesign.in/home",
-    },
     
-    {
-      name: "monkeyPie",
-      description:
-        "A full stack AI image generating website which works on Dall-E AI and allows user to share his work with community.",
-      tags: [
-        {
-          name: "React",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Mongodb",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Tailwind",
-          color: "blue-text-gradient",
-        },
-      ],
-      image: monkeypie,
-      source_code_link: "https://monkeypie.netlify.app/",
-    },
   ];
   
   export { services, technologies, experiences, testimonials, projects };
