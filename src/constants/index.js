@@ -38,7 +38,11 @@ import {
     },
     {
       id: "work",
-      title: "Work",
+      title: "Experience",
+    },
+    {
+      id: "projects",
+      title: "Projects",
     },
     {
       id: "contact",
@@ -130,55 +134,23 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Full Stack Developer",
+      company_name: "Freelance",
+      date: "2024 - present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Designed and developed multiple full-stack web applications for clients in real estate, interior design, and personal portfolio domains.",
+        "Customized each project to meet client-specific requirements using the MERN stack and responsive UI with Tailwind CSS.",
+        "Collaborated with clients throughout the development cycle to deliver scalable, brand-consistent digital solutions on time.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: "Software Engineer Intern ",
+      company_name: "Matrix Credit Risk Controls Pvt. Ltd.",
+      date: "Jun 2025 - Jul 2025",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Built a Contact Point Verification System to validate, manage, and authenticate user touchpoints across platforms.",
+        "Contributed to development and debugging using React, Node.js, and JavaScript.",
+        "Worked with Chrome extensions, APIs, and Git for seamless integration and version control.",
       ],
     },
   ];
@@ -211,10 +183,31 @@ import {
   ];
   
   const projects = [
-    {
+        {
+      name: "ragviDesign",
+      description:
+        "A sleek, responsive website for an interior design brand featuring a custom CMS that lets the client manage portfolios, services, and site content, no code required.",
+      tags: [
+        {
+          name: "Redux",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Firebase",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "JWT",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: ragvi,
+      source_code_link: "https://www.ragvidesign.in/home",
+    },
+        {
       name: "Events Now",
       description:
-        "An event booking web app where users can discover events, reserve seats, and manage bookings seamlessly.",
+        "A full-stack booking platform with real-time seat reservation, user booking management, and a powerful admin panel to create and control events all in one seamless flow.",
       tags: [
         {
           name: "React",
@@ -225,33 +218,12 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "MongoDB",
+          name: "Nodemailer",
           color: "blue-text-gradient",
         },
       ],
       image: eventsnow,
       source_code_link: "https://events-now-flax.vercel.app/",
-    },
-        {
-      name: "ragviDesign",
-      description:
-        "A fully functional and responsive website for an interior design company based in Noida, India.",
-      tags: [
-        {
-          name: "React",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Firebase",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "jwt",
-          color: "blue-text-gradient",
-        },
-      ],
-      image: ragvi,
-      source_code_link: "https://www.ragvidesign.in/home",
     },
     {
       name: "monkeyPie",
@@ -259,15 +231,15 @@ import {
         "A full stack AI image generating website which works on Dall-E AI and allows user to share his work with community.",
       tags: [
         {
-          name: "React",
+          name: "OpenAI API",
           color: "blue-text-gradient",
         },
         {
-          name: "Mongodb",
+          name: "Cloudinary",
           color: "blue-text-gradient",
         },
         {
-          name: "Tailwind",
+          name: "MongoDB",
           color: "blue-text-gradient",
         },
       ],
@@ -275,16 +247,34 @@ import {
       source_code_link: "https://monkeypie.netlify.app/",
     },
     {
+      name: "chatApp",
+      description:
+        "Real-Time Chat App with video caling and screen sharing features built using MERN stack and daisyUI.",
+      tags: [
+        {
+          name: "DaisyUI",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Stream",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Zustand",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: chatApp,
+      source_code_link: "https://stream-app-e0li.onrender.com",
+    },
+
+        {
       name: "skyEstate",
       description:
         "Full stack, responsive Real Estate website for Buying, Selling and Renting Houses. Build using react and tailwind. ",
       tags: [
         {
-          name: "React",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Express",
+          name: "Node.js",
           color: "blue-text-gradient",
         },
         {
@@ -298,27 +288,6 @@ import {
       ],
       image: skyEstate,
       source_code_link: "https://skyestate.onrender.com/",
-    },
-        {
-      name: "chatApp",
-      description:
-        "Real-Time Chat App with video caling and screen sharing features built using MERN stack and daisyUI.",
-      tags: [
-        {
-          name: "daisyUI",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Stream",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "jwt",
-          color: "blue-text-gradient",
-        },
-      ],
-      image: chatApp,
-      source_code_link: "https://stream-app-e0li.onrender.com",
     },
     
   ];
