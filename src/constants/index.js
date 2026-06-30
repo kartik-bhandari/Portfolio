@@ -28,6 +28,7 @@ import {
     skyEstate,
     ragvi,
     chatApp,
+    hardwear,
     eventsnow
   } from "../assets";
   
@@ -183,6 +184,27 @@ import {
   ];
   
   const projects = [
+            {
+      name: "Hardwear",
+      description:
+        "Built an e-commerce platform that allows customers to shop and checkout seamlessly while admins control inventory and orders through a dedicated dashboard, with payment processing and automated email notifications handled out of the box.",
+      tags: [
+        {
+          name: "Razorpay",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Cloudinary",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Resend",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: hardwear,
+      source_code_link: "https://www.hardwear.live",
+    },
         {
       name: "ragviDesign",
       description:

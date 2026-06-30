@@ -29,6 +29,7 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
+import hardwear from "./hardwear.png";
 import eventsnow from "./eventsnow.png";
 import monkeypie from "./monkeypie.png";
 import ragvi from "./ragvi.png";
@@ -72,4 +73,5 @@ export {
   homyz,
   skyEstate,
   eventsnow,
+  hardwear,
 };
