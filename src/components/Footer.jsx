@@ -2,27 +2,27 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-tertiary/20 backdrop-blur-md border-t border-white/5 py-10 select-none">
+    <footer className="w-full bg-black border-t-2 border-zinc-800 py-10 select-none">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Brand/Name Logo */}
         <div className="text-center md:text-left">
-          <p className="text-white text-[18px] font-bold tracking-wide">
-            Kartik <span className="text-[#915EFF]">Bhandari</span>
+          <p className="text-white text-[20px] font-bold tracking-tighter uppercase">
+            Kartik <span className="text-[#FFE500]">Bhandari</span>
           </p>
-          <p className="text-secondary text-[12px] mt-1">
+          <p className="text-secondary text-[12px] mt-1 font-bold uppercase tracking-wider">
             Software Developer
           </p>
         </div>
 
         {/* Social Icons */}
-        <div className="flex flex-row items-center gap-6">
+        <div className="flex flex-row items-center gap-4">
           {/* GitHub Link */}
           <a
             href="https://github.com/kartik-bhandari"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="w-10 h-10 rounded-full bg-primary/40 border border-white/5 flex items-center justify-center text-secondary hover:text-white hover:border-[#915EFF] hover:scale-110 active:scale-95 transition-all duration-300 group"
+            className="w-9 h-9 rounded-none bg-[#121212] border-2 border-zinc-800 flex items-center justify-center text-secondary hover:text-black hover:bg-[#FFE500] hover:scale-105 active:scale-95 transition-all duration-300 group"
           >
             <svg
               className="w-5 h-5 fill-current"
@@ -39,7 +39,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="w-10 h-10 rounded-full bg-primary/40 border border-white/5 flex items-center justify-center text-secondary hover:text-white hover:border-[#915EFF] hover:scale-110 active:scale-95 transition-all duration-300 group"
+            className="w-9 h-9 rounded-none bg-[#121212] border-2 border-zinc-800 flex items-center justify-center text-secondary hover:text-black hover:bg-[#FFE500] hover:scale-105 active:scale-95 transition-all duration-300 group"
           >
             <svg
               className="w-5 h-5 fill-current"
@@ -52,9 +52,9 @@ const Footer = () => {
 
           {/* Email Link */}
           <a
-            href="mailto:kartikbhandari2003@gmail.com"
+            href="mailto:work@kartikbhandari.com"
             aria-label="Email"
-            className="w-10 h-10 rounded-full bg-primary/40 border border-white/5 flex items-center justify-center text-secondary hover:text-white hover:border-[#915EFF] hover:scale-110 active:scale-95 transition-all duration-300 group"
+            className="w-9 h-9 rounded-none bg-[#121212] border-2 border-zinc-800 flex items-center justify-center text-secondary hover:text-black hover:bg-[#FFE500] hover:scale-105 active:scale-95 transition-all duration-300 group"
           >
             <svg
               className="w-5 h-5 fill-none stroke-current stroke-2"

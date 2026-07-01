@@ -6,14 +6,14 @@ import SectionWrapper from "../hoc/SectionWrapper";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ title, icon }) => (
-  <div className="xs:w-[250px] w-full bg-tertiary/40 backdrop-blur-md p-[1px] rounded-[20px] border border-white/5 shadow-lg select-none transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:border-white/10 hover:shadow-2xl hover:shadow-[#915EFF]/5 group">
-    <div className="bg-primary/20 rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col transition-all duration-300 group-hover:bg-primary/10">
+  <div className="xs:w-[250px] w-full bg-[#121212] p-5 rounded-none border-2 border-zinc-800 transition-all duration-300 select-none group hover:-translate-x-[4px] hover:-translate-y-[4px] hover:border-[#FFE500] hover:shadow-[4px_4px_0px_#FFE500]">
+    <div className="flex justify-center items-center flex-col min-h-[220px] gap-6">
       <img
         src={icon}
         alt={title}
-        className="w-16 h-16 object-contain filter group-hover:scale-110 group-hover:brightness-110 transition-all duration-300"
+        className="w-16 h-16 object-contain filter group-hover:scale-105 transition-all duration-300"
       />
-      <h3 className="text-white text-[20px] font-bold text-center group-hover:text-[#915EFF] transition-colors duration-300">
+      <h3 className="text-white text-[18px] font-bold text-center group-hover:text-[#FFE500] transition-colors duration-300 uppercase tracking-tight">
         {title}
       </h3>
     </div>
@@ -36,11 +36,11 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      <p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-I build fast, scalable web applications using JavaScript, React, Node.js, and Next.js. I've shipped production-ready applications across the stack, from pixel-perfect frontends to robust backend systems. I focus on clean architecture, sharp UI, and code that doesn't fall apart at scale. If you have a problem worth solving, let's build something that solves it right.
+      <p className="mt-6 text-secondary text-[14px] md:text-[17px] max-w-3xl leading-[26px]">
+I build production-ready web apps — from pixel-perfect frontends to robust backends. MERN + Next.js + AI integrations. I focus on clean architecture, solid UI/UX, and write code that is clean, secure, and maintainable. If you have an interesting problem to solve, let's build something great together.
       </p>
 
-      {/* <div className="mt-20 flex justify-center flex-wrap gap-10">
+      {/* <div className="mt-16 flex justify-center flex-wrap gap-8">
         {services.map((service, index) => (
           <ServiceCard key={service.title} {...service} />
         ))}

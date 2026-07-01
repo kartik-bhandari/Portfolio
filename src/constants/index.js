@@ -23,13 +23,13 @@ import {
     tesla,
     shopify,
     monkeypie,
-    homyz,
     threejs,
-    skyEstate,
     ragvi,
     chatApp,
+    ledger,
     hardwear,
-    eventsnow
+    eventsnow,
+    nextjs
   } from "../assets";
   
   export const navLinks = [
@@ -79,10 +79,14 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    // {
-    //   name: "TypeScript",
-    //   icon: typescript,
-    // },
+    {
+      name: "TypeScript",
+      icon: typescript,
+    },
+    {
+      name: "Next JS",
+      icon: nextjs,
+    },
     {
       name: "React JS",
       icon: reactjs,
@@ -184,6 +188,27 @@ import {
   ];
   
   const projects = [
+                {
+      name: "Ledger.ai",
+      description:
+        " AI-powered personal finance tracker where users import bank statements via PDF, and an AI analyzes spending patterns, categorizes transactions, generates monthly reports, and answers financial questions through a chat interface.",
+      tags: [
+        {
+          name: "Next.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Gemini API",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Recharts",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: ledger,
+      source_code_link: "https://ledger-ai-snowy.vercel.app/",
+    },
             {
       name: "Hardwear",
       description:
@@ -226,27 +251,6 @@ import {
       image: ragvi,
       source_code_link: "https://www.ragvidesign.in/home",
     },
-        {
-      name: "Events Now",
-      description:
-        "A full-stack booking platform with real-time seat reservation, user booking management, and a powerful admin panel to create and control events all in one seamless flow.",
-      tags: [
-        {
-          name: "React",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Node.js",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Nodemailer",
-          color: "blue-text-gradient",
-        },
-      ],
-      image: eventsnow,
-      source_code_link: "https://events-now-flax.vercel.app/",
-    },
     {
       name: "monkeyPie",
       description:
@@ -267,6 +271,27 @@ import {
       ],
       image: monkeypie,
       source_code_link: "https://monkeypie.netlify.app/",
+    },
+            {
+      name: "Events Now",
+      description:
+        "A full-stack booking platform with real-time seat reservation, user booking management, and a powerful admin panel to create and control events all in one seamless flow.",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Node.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Nodemailer",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: eventsnow,
+      source_code_link: "https://events-now-flax.vercel.app/",
     },
     {
       name: "chatApp",
@@ -289,29 +314,6 @@ import {
       image: chatApp,
       source_code_link: "https://stream-app-e0li.onrender.com",
     },
-
-        {
-      name: "skyEstate",
-      description:
-        "Full stack, responsive Real Estate website for Buying, Selling and Renting Houses. Build using react and tailwind. ",
-      tags: [
-        {
-          name: "Node.js",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "JWT",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Firebase",
-          color: "blue-text-gradient",
-        },
-      ],
-      image: skyEstate,
-      source_code_link: "https://skyestate.onrender.com/",
-    },
-    
   ];
   
   export { services, technologies, experiences, testimonials, projects };

@@ -11,17 +11,17 @@ const ExperienceCard = ({ experience }) => {
       <div className="hidden md:block w-[calc(50%-2.5rem)]" />
 
       {/* Experience Card Content */}
-      <div className="w-[calc(100%-4rem)] ml-auto md:ml-0 md:w-[calc(50%-2.5rem)] bg-tertiary/40 backdrop-blur-md p-6 rounded-2xl border border-white/5 shadow-lg hover:border-white/10 hover:shadow-xl hover:shadow-[#915EFF]/5 transition-all duration-300 group select-none">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-white/5 pb-3">
+      <div className="w-[calc(100%-4rem)] ml-auto md:ml-0 md:w-[calc(50%-2.5rem)] bg-[#121212] p-6 rounded-none border-2 border-zinc-800 transition-all duration-300 group select-none hover:-translate-x-[4px] hover:-translate-y-[4px] hover:border-[#FFE500] hover:shadow-[4px_4px_0px_#FFE500]">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b-2 border-zinc-800/10 pb-3">
           <div>
-            <h3 className="text-white text-[20px] font-bold group-hover:text-[#915EFF] transition-colors duration-300">
+            <h3 className="text-white text-[20px] font-bold group-hover:text-[#FFE500] transition-colors duration-300">
               {experience.title}
             </h3>
-            <p className="text-secondary text-[14px] font-semibold mt-1">
+            <p className="text-secondary text-[14px] font-bold mt-1">
               {experience.company_name}
             </p>
           </div>
-          <span className="text-white/60 text-[12px] font-medium px-3 py-1 rounded-full bg-primary/40 border border-white/5 self-start md:self-center">
+          <span className="text-white font-bold text-[11px] px-3 py-1 border border-zinc-800 bg-black rounded-none uppercase tracking-wider self-start md:self-center select-none">
             {experience.date}
           </span>
         </div>
@@ -30,7 +30,7 @@ const ExperienceCard = ({ experience }) => {
           {experience.points.map((point, index) => (
             <li
               key={`experience-point-${index}`}
-              className="text-white-100/90 text-[13px] pl-1 tracking-wider leading-relaxed"
+              className="text-white-100/90 text-[13px] md:text-[15px]  pl-1 tracking-wider leading-relaxed"
             >
               {point}
             </li>
@@ -61,7 +61,7 @@ const Experience = () => {
       {/* Vertical Timeline container */}
       <div className="relative w-full max-w-5xl mx-auto flex flex-col items-center">
         {/* The central line */}
-        <div className="absolute left-6 md:left-1/2 -translate-x-1/2 top-2 bottom-2 w-[3px] bg-gradient-to-b from-[#915EFF]/80 via-[#915EFF]/40 to-transparent rounded-full" />
+        <div className="absolute left-6 md:left-1/2 -translate-x-1/2 top-2 bottom-2 w-[3px] bg-gradient-to-b from-[#FFE500]/80 via-[#FFE500]/40 to-transparent rounded-full" />
 
         {/* Timeline Items */}
         <div className="w-full flex flex-col items-center">

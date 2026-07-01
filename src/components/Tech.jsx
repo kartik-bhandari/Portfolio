@@ -17,6 +17,8 @@ const glowColors = {
   "git": "rgba(240, 80, 50, 0.25)",         // #F05032
   "figma": "rgba(242, 78, 30, 0.25)",       // #F24E1E
   "Photoshop": "rgba(49, 168, 255, 0.25)",  // #31A8FF
+  "TypeScript": "rgba(49, 120, 198, 0.25)",
+  "Next JS": "rgba(255, 255, 255, 0.25)",
 };
 
 const textColors = {
@@ -32,6 +34,8 @@ const textColors = {
   "git": "group-hover:text-[#F05032]",
   "figma": "group-hover:text-[#F24E1E]",
   "Photoshop": "group-hover:text-[#31A8FF]",
+  "TypeScript": "group-hover:text-[#3178C6]",
+  "Next JS": "group-hover:text-[#FFFFFF]",
 };
 
 const borderHoverColors = {
@@ -47,28 +51,21 @@ const borderHoverColors = {
   "git": "hover:border-[#F05032]/30",
   "figma": "hover:border-[#F24E1E]/30",
   "Photoshop": "hover:border-[#31A8FF]/30",
+  "TypeScript": "hover:border-[#3178C6]/30",
+  "Next JS": "hover:border-zinc-800/30",
 };
 
 const TechCard = ({ name, icon }) => {
-  const glow = glowColors[name] || "rgba(255, 255, 255, 0.15)";
-  const textColorClass = textColors[name] || "group-hover:text-[#915EFF]";
-  const borderHoverClass = borderHoverColors[name] || "hover:border-white/20";
-
   return (
     <div
-      style={{
-        "--glow-color": glow,
-      }}
-      className={`w-36 h-36 flex flex-col justify-center items-center bg-tertiary/40 backdrop-blur-md border border-white/5 rounded-2xl cursor-pointer p-4 select-none group transition-all duration-300 ease-out hover:-translate-y-1.5 hover:scale-105 ${borderHoverClass} hover:[box-shadow:0_10px_25px_var(--glow-color)]`}
+      className="w-24 h-24 flex flex-col justify-center items-center p-3 select-none group transition-all duration-300 ease-out hover:-translate-y-1"
     >
-      <div className="w-16 h-16 flex items-center justify-center rounded-xl bg-primary/30 p-2 group-hover:bg-primary/10 transition-all duration-300 ease-out">
-        <img
-          src={icon}
-          alt={name}
-          className="w-full h-full object-contain filter group-hover:scale-105 group-hover:brightness-110 transition-all duration-300 ease-out"
-        />
-      </div>
-      <p className={`mt-3 text-[12px] font-semibold text-center text-white/80 ${textColorClass} transition-colors duration-300 ease-out`}>
+      <img
+        src={icon}
+        alt={name}
+        className="w-22 h-22 object-contain group-hover:scale-110 transition-transform duration-300 ease-out"
+      />
+      <p className="mt-2.5 text-[10px] font-bold text-center text-secondary group-hover:text-[#FFE500] transition-colors duration-300 ease-out uppercase tracking-wider">
         {name}
       </p>
     </div>

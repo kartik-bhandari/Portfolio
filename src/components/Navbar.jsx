@@ -44,26 +44,22 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary/90 backdrop-blur-md border-b border-white/5`}>
+    <nav className={`${styles.paddingX} w-full flex items-center py-4 fixed top-0 z-20 bg-black border-b-2 border-zinc-800`}>
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link to='/' className='flex items-center gap-2'
           onClick={() => {
             setActive("")
             window.scrollTo(0, 0);
           }}>
-          <img src={klogo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex'>
-            Kartik &nbsp;
-            <span className='sm:block hidden text-secondary text-[14px] self-center font-normal ml-1 border-l border-white/20 pl-2'>
-              Portfolio
-            </span>
+          <p className='text-white text-[22px] font-bold cursor-pointer flex tracking-tighter'>
+            KB<span className='text-[#FFE500]'>_</span>
           </p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
             <li
               key={link.id}
-              className={`${active === link.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer transition-colors duration-200`}
+              className={`${active === link.title ? "text-[#FFE500]" : "text-secondary"} hover:text-white text-[16px] font-bold uppercase tracking-wider cursor-pointer transition-colors duration-200`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
@@ -74,21 +70,21 @@ const Navbar = () => {
           <img
             src={toggle ? close : menu}
             alt='menu'
-            className='w-[28px] h-[28px] object-contain cursor-pointer'
+            className='w-[24px] h-[24px] object-contain cursor-pointer filter invert'
             onClick={() => setToggle(!toggle)}
           />
 
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 bg-tertiary/95 backdrop-blur-lg border border-white/10 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl shadow-2xl`}
+            } p-6 bg-black border-2 border-zinc-800 absolute top-16 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-none shadow-[4px_4px_0px_#FFE500]`}
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
+                  className={`font-bold cursor-pointer text-[14px] uppercase tracking-wider ${
+                    active === nav.title ? "text-[#FFE500]" : "text-secondary"
                   } hover:text-white transition-colors duration-200`}
                   onClick={() => {
                     setToggle(!toggle);

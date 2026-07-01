@@ -23,19 +23,19 @@ import threejs from "./tech/threejs.svg";
 import Photoshop from "./tech/Photoshop.png";
 import framermotion from "./tech/framermotion.svg"
 import cpp from "./tech/cpp.png";
+import nextjs from "./tech/nextjs.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
+import ledger from "./ledger.png";
 import hardwear from "./hardwear.png";
 import eventsnow from "./eventsnow.png";
 import monkeypie from "./monkeypie.png";
 import ragvi from "./ragvi.png";
 import chatApp from "./chatApp.png";
-import homyz from "./homyz.png";
-import skyEstate from "./skyEstate.png"
 
 
 export {
@@ -64,14 +64,14 @@ export {
   redux,
   tailwind,
   typescript,
+  nextjs,
   threejs,
   meta,
   shopify,
   starbucks,
   tesla,
   monkeypie,
-  homyz,
-  skyEstate,
+  ledger,
   eventsnow,
   hardwear,
 };
