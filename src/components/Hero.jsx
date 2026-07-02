@@ -47,7 +47,7 @@ const Hero = () => {
           <div className="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:24px_24px] border border-zinc-800" />
           
           {/* Brutalist Code Panel */}
-          <div className="relative bg-[#121212] border-2 border-zinc-800 p-6 w-[360px] shadow-[8px_8px_0px_#FFE500] z-10">
+          <div className="relative bg-[#121212] border-2 border-zinc-800 p-6 w-[360px] shadow-[8px_8px_0px_#FFE500] z-0">
             {/* Card Header (Mac style buttons but square) */}
             <div className="flex flex-row items-center gap-2 border-b-2 border-zinc-800 pb-3 mb-4">
               <div className="w-3 h-3 rounded-none border border-zinc-800 bg-[#FFE500]" />
@@ -75,12 +75,12 @@ const Hero = () => {
           </div>
           
           {/* Floating Terminal Prompt Symbol box */}
-          <div className="absolute top-8 -left-6 bg-black border-2 border-zinc-800 px-3 py-2 text-[#FFE500] font-mono font-bold text-xs tracking-tighter shadow-[4px_4px_0px_#fff] z-20">
+          <div className="absolute top-8 -left-6 bg-black border-2 border-zinc-800 px-3 py-2 text-[#FFE500] font-mono font-bold text-xs tracking-tighter shadow-[4px_4px_0px_#fff] z-10">
             &gt;_ terminal
           </div>
           
           {/* Floating Coding Brackets Tag box */}
-          <div className="absolute -bottom-2 right-2 bg-[#FFE500] text-black border-2 border-zinc-800 px-4 py-2 font-mono font-bold text-sm shadow-[4px_4px_0px_#000] z-20">
+          <div className="absolute -bottom-2 right-2 bg-[#FFE500] text-black border-2 border-zinc-800 px-4 py-2 font-mono font-bold text-sm shadow-[4px_4px_0px_#000] z-10">
             &lt;/&gt; code
           </div>
           
